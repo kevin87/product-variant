@@ -5,5 +5,6 @@ class UpgradePiggybakVariantsTables < ActiveRecord::Migration
     rename_table :option_values, :piggybak_variants_option_values
     rename_table :option_values_variants, :piggybak_variants_option_values_variants
     rename_table :option_configurations, :piggybak_variants_option_configurations
+    rename_table :sellables, :piggybak_variants_sellables
   end
 end
