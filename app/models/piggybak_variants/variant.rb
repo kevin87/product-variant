@@ -5,7 +5,7 @@ module PiggybakVariants
     has_and_belongs_to_many :option_values, :class_name => "::PiggybakVariants::OptionValue"
     has_many :options, :through => :option_values
 
-    #scope :available, -> { joins(:piggybak_variants_sellable).where(["piggybak_variants_sellables.active = ? AND (piggybak_variants_sellables.quantity > 0 OR piggybak_variants_sellables.unlimited_inventory = ?)",true,true]) } 
+    scope :available, -> { joins(:piggybak_variants_sellable).where(["piggybak_variants_sellables.active = ? AND (piggybak_variants_sellables.quantity > 0 OR piggybak_variants_sellables.unlimited_inventory = ?)",true,true]) } 
     validate :option_value_validation
     validate :require_item
 
@@ -14,7 +14,7 @@ module PiggybakVariants
     end
 
     def require_item
-      self.errors.add(:piggybak_variants_sellables, "You must have foo") if self.piggybak_variants_sellables.nil?
+      self.errors.add(:piggybak_variants_sellable, "You must have foo") if self.piggybak_variants_sellable.nil?
     end
 
     def option_value_validation
