@@ -92,7 +92,7 @@ module PiggybakVariants
               partial "option_values"
               help "An option value for each option must be selected"
             end
-            field :piggybak_sellable do
+            field :piggybak_variants_sellable do
               active true
             end
           end
