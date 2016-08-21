@@ -1,0 +1,29 @@
+0.1.3
+Released: 07.16.2014
+* Removed reference to reflections
+
+0.1.2
+Released: 05.06.2014
+* Added includes for query optimization
+* Added option lookup on variant
+* Fixed rails admin form on multi-word classnames
+
+0.1.1
+Released: 4.07.2014
+* Upgrade to Rails 4.1
+
+0.1.0
+Released: 3.27.2014
+* Upgrade to Rails 4
+* `rake piggybak_variants:install:migrations` in your main Rails application to receive updated migration. Run migration.
+
+0.0.15
+Released: 3.28.2013
+* JavaScript function cleanup, extractDropdownValues simplification / refactoring
+* Namespace additions in JavaScript
+* Minor readme update
+
+0.0.14
+Released: 3.22.2013
+* Running sort on selected array
+* Added support for dropdowns
