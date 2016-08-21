@@ -38,7 +38,6 @@ module PiggybakVariants
           object_label_method :admin_label
           edit do
             field :name
-            field :image, :paperclip
             field :position
           end
         end

@@ -28,11 +28,11 @@ module PiggybakVariants
         if matching_option_values > 1
           self.errors.add(:option_values, "You must have only option value for #{option.name}")
           error = true
-        elsif matching_option_values < 1 
+        elsif matching_option_values < 1
           self.errors.add(:option_values, "You must have one option value for #{option.name}")
           error = true
         end
-      end 
+      end
       self.errors.add(:base, "Option value errors") if error
     end
   end
