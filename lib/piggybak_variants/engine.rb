@@ -74,6 +74,10 @@ module PiggybakVariants
             field :price
             field :active
             field :quantity
+            field :product_weight
+            field :product_height
+            field :product_width
+            field :product_length
             field :unlimited_inventory do
               help "If true, backorders on this variant will be allowed, regardless of quantity on hand."
             end
