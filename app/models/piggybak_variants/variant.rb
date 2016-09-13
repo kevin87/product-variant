@@ -10,7 +10,7 @@ module PiggybakVariants
     validate :require_item
 
     def admin_label
-      "#{self.piggybak_variants_sellable.sku}: #{self.piggybak_variants_sellable.price}"
+      "#{self.piggybak_variants_sellable.try(:sku)}: #{self.piggybak_variants_sellable.try(:price)}"
     end
 
     def require_item
