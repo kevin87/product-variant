@@ -43,7 +43,7 @@ module PiggybakVariants
         end
 
         config.model PiggybakVariants::Option do
-          navigation_label "Extensions"
+          navigation_label "Product"
           list do
             field :name
             field :position
@@ -85,6 +85,7 @@ module PiggybakVariants
         end
 
         config.model PiggybakVariants::Variant do
+          navigation_label "Product"
           object_label_method :admin_label
           show do
             field :option_values do
